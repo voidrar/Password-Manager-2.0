@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <limits>	
 #include <stdlib.h>
 #include <string>
@@ -27,13 +27,17 @@ void menu()
 
 
 	cout << "are We viewing or setting a password? \n";
+	
 	cin >> menus;
+	system("cls");
 	if (menus == "Viewing" || menus == "viewing")
 	{
+		
 		ViewPassword();
 	}
 	else if (menus == "Setting" || menus == "setting")
 	{
+		system("cls");
 		CreatePassword();
 	}
 	else
