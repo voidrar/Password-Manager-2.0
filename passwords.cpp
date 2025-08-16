@@ -45,6 +45,7 @@ void Discord()
 		menu();
 	}
 	else {
+		system("cls");
 		Discord();
 	}
 }
@@ -72,6 +73,7 @@ void VRC()
 	}
 	else
 	{
+		system("cls");
 		VRC();
 	}
 
@@ -94,6 +96,7 @@ void Uni()
 	}
 	else
 	{
+		system("cls");
 		Uni();
 	}
 }
@@ -143,7 +146,7 @@ void CreatePassword()
 
 
 
-
+		
 		Uni();
 
 
