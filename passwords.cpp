@@ -41,19 +41,51 @@ void Discord()
 	}
 	else if (UV == "Yes" || UV == "yes" || UV == "Y" || UV == "y")
 	{
+		system("cls");
 		menu();
 	}
 }
-
+	
 
 void VRC()
 {
+	cout << "Enter Your VRCHAT Password To Be Saved" << "\n";
+	cin >> VRCPass;
+	Decor();
+	cout <<  VRCPass << "\n";
+	Decor();
+	cout << "Is this correct?    Yes|No \n";
+	cin >> UV;
+	if (UV == "No" || UV == "no" || UV == "n" || UV == "N")
+	{
+		system("cls");
+		VRC();
+	}
+	else if (UV == "Yes" || UV == "yes" || UV == "Y" || UV == "y")
+	{
+		system("cls");
+		menu();
+	}
 
 }
 void Uni()
 {
-
+	cout << "Enter The Password You Need Saved";
+	cin >> Universal;
+	cout << "\n" << "Is This Correct?      Yes|No";
+	cin >> UV;
+	if (UV == "No" || UV == "no" || UV == "n" || UV == "N")
+	{
+		system("cls");
+		Discord();
+	}
+	else if (UV == "Yes" || UV == "yes" || UV == "Y" || UV == "y")
+	{
+		system("cls");
+		menu();
+	}
 }
+
 
 
 
@@ -75,36 +107,39 @@ void Uni()
 
 void CreatePassword()
 {
-
+	system("cls");
 	cout << "Enter The Password You Would Like To Save\n";
+	cout << "Discord | VRCHAT | UNIVERSAL\n";
+
+
 	cin >> CreatePass;
 	if (CreatePass == "Discord" || CreatePass == "discord" || CreatePass == "disc" || CreatePass == "Disc" || CreatePass == "Dis" || CreatePass == "dis")
 	{
 
 		Discord();
 
-
-		if (CreatePass == "VRC" || CreatePass == "vrc" || CreatePass == "VRChat" || CreatePass == "vrchat")
-		{
-
-
+	}
+	else if (CreatePass == "VRC" || CreatePass == "vrc" || CreatePass == "VRChat" || CreatePass == "vrchat")
+	{
 
 
+		VRC();
 
-			if (CreatePass == "Universal" || CreatePass == "universal")
-			{
-
-
+	}
+	else if (CreatePass == "Universal" || CreatePass == "universal")
+	{
 
 
 
 
-
-			}
-		}
+		Uni();
 
 
 	}
+
+
+
+	
 	else
 	{
 		system("cls");
