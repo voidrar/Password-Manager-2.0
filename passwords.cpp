@@ -44,7 +44,11 @@ void Discord()
 		system("cls");
 		menu();
 	}
+	else {
+		Discord();
+	}
 }
+
 	
 
 void VRC()
@@ -66,6 +70,10 @@ void VRC()
 		system("cls");
 		menu();
 	}
+	else
+	{
+		VRC();
+	}
 
 }
 void Uni()
@@ -77,12 +85,16 @@ void Uni()
 	if (UV == "No" || UV == "no" || UV == "n" || UV == "N")
 	{
 		system("cls");
-		Discord();
+		Uni();
 	}
 	else if (UV == "Yes" || UV == "yes" || UV == "Y" || UV == "y")
 	{
 		system("cls");
 		menu();
+	}
+	else
+	{
+		Uni();
 	}
 }
 
